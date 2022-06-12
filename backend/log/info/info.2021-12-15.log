@@ -1,0 +1,977 @@
+2021-12-15 18:35:33.466 febs [main] INFO  cc.mrbird.febs.FebsApplication - Starting FebsApplication on WIN-ETS2DEK9JHC with PID 6536 (started by Administrator in E:\Project\项目交易平台（项目文件）\景区系统\net\backend)
+2021-12-15 18:35:33.469 febs [main] INFO  cc.mrbird.febs.FebsApplication - No active profile set, falling back to default profiles: default
+2021-12-15 18:35:34.863 febs [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-15 18:35:34.870 febs [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-12-15 18:35:34.940 febs [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46ms. Found 0 repository interfaces.
+2021-12-15 18:35:35.459 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'asyncExecutorPoolConfig' of type [cc.mrbird.febs.common.config.AsyncExecutorPoolConfig$$EnhancerBySpringCGLIB$$23ec8601] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:35.637 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:35.817 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$fe3bd1a5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:35.825 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:35.828 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:35.839 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$94ad60d4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:35.857 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfig' of type [cc.mrbird.febs.common.authentication.ShiroConfig$$EnhancerBySpringCGLIB$$2d627d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:36.298 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [cc.mrbird.febs.common.config.RedisConfig$$EnhancerBySpringCGLIB$$f8f219d1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:36.318 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisPoolFactory' of type [redis.clients.jedis.JedisPool] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:36.323 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisService' of type [cc.mrbird.febs.common.service.impl.RedisServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:36.399 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:36.408 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatisPlusConfig' of type [cc.mrbird.febs.common.config.MybatisPlusConfig$$EnhancerBySpringCGLIB$$e634bce3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:36.412 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:36.431 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$d275cd6e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:36.442 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDataSourceCreator' of type [com.baomidou.dynamic.datasource.DynamicDataSourceCreator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:36.444 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDataSourceProvider' of type [com.baomidou.dynamic.datasource.provider.YmlDynamicDataSourceProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:36.448 febs [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
+2021-12-15 18:35:36.459 febs [main] INFO  com.zaxxer.hikari.HikariDataSource - primary - Starting...
+2021-12-15 18:35:36.820 febs [main] INFO  com.zaxxer.hikari.HikariDataSource - primary - Start completed.
+2021-12-15 18:35:36.820 febs [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - load a datasource named [primary] success
+2021-12-15 18:35:36.820 febs [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [primary]
+2021-12-15 18:35:36.820 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.baomidou.dynamic.datasource.DynamicRoutingDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:36.833 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:36.840 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.430 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.436 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.439 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.441 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMapper' of type [com.sun.proxy.$Proxy116] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.461 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMenuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.463 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMenuMapper' of type [com.sun.proxy.$Proxy118] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.469 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userRoleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.470 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userRoleMapper' of type [com.sun.proxy.$Proxy119] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.471 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userRoleService' of type [cc.mrbird.febs.system.service.impl.UserRoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.523 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMenuService' of type [cc.mrbird.febs.system.service.impl.RoleMenuServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.543 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleService' of type [cc.mrbird.febs.system.service.impl.RoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.570 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'menuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.571 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'menuMapper' of type [com.sun.proxy.$Proxy123] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.574 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'menuService' of type [cc.mrbird.febs.system.service.impl.MenuServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.600 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.601 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [com.sun.proxy.$Proxy125] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.636 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userConfigMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.637 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userConfigMapper' of type [com.sun.proxy.$Proxy126] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.641 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userConfigService' of type [cc.mrbird.febs.system.service.impl.UserConfigServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.661 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userService' of type [cc.mrbird.febs.system.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.684 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration$$EnhancerBySpringCGLIB$$f040e065] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.688 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration$$EnhancerBySpringCGLIB$$a28da27e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.692 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$$EnhancerBySpringCGLIB$$5da4886d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.700 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.702 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.707 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration$$EnhancerBySpringCGLIB$$846fff9b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.722 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.724 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$$EnhancerBySpringCGLIB$$d24c7df4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.734 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.735 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration' of type [org.springframework.data.web.config.SpringDataJacksonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.740 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jacksonGeoModule' of type [org.springframework.data.geo.GeoModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.743 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.766 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.781 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheService' of type [cc.mrbird.febs.common.service.impl.CacheServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.791 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userManager' of type [cc.mrbird.febs.system.manager.UserManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.792 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroRealm' of type [cc.mrbird.febs.common.authentication.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.802 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:37.816 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-15 18:35:38.134 febs [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9529 (http)
+2021-12-15 18:35:38.151 febs [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9529"]
+2021-12-15 18:35:38.158 febs [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-12-15 18:35:38.158 febs [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2021-12-15 18:35:38.772 febs [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-12-15 18:35:38.772 febs [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5215 ms
+2021-12-15 18:35:39.623 febs [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2021-12-15 18:35:39.634 febs [main] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-12-15 18:35:39.634 febs [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.1 created.
+2021-12-15 18:35:39.673 febs [main] INFO  o.s.s.quartz.LocalDataSourceJobStore - Using db table-based data access locking (synchronization).
+2021-12-15 18:35:39.675 febs [main] INFO  o.s.s.quartz.LocalDataSourceJobStore - JobStoreCMT initialized.
+2021-12-15 18:35:39.675 febs [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'MyScheduler' with instanceId 'WIN-ETS2DEK9JHC1639564539624'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2021-12-15 18:35:39.675 febs [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'MyScheduler' initialized from an externally provided properties instance.
+2021-12-15 18:35:39.675 febs [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.1
+2021-12-15 18:35:39.677 febs [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@5e9cb95
+2021-12-15 18:35:39.755 febs [main] INFO  p6spy - 2021-12-15 18:35:39 | 耗时 27 ms | SQL 语句：
+select job_id jobId, bean_name beanName, method_name methodName, params, cron_expression cronExpression, status, remark, create_time createTime from t_job order by job_id;
+2021-12-15 18:35:41.158 febs [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-12-15 18:35:41.283 febs [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'taskExecutor'
+2021-12-15 18:35:41.316 febs [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-12-15 18:35:41.772 febs [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2021-12-15 18:35:42.429 febs [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2021-12-15 18:35:42.520 febs [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2021-12-15 18:35:42.544 febs [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-12-15 18:35:42.599 febs [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2021-12-15 18:35:42.759 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_1
+2021-12-15 18:35:42.769 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_2
+2021-12-15 18:35:42.778 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_3
+2021-12-15 18:35:42.786 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_4
+2021-12-15 18:35:42.798 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_5
+2021-12-15 18:35:42.843 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingDELETE_1
+2021-12-15 18:35:42.848 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_1
+2021-12-15 18:35:42.850 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateByIdUsingPUT_1
+2021-12-15 18:35:42.857 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_6
+2021-12-15 18:35:42.861 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingDELETE_2
+2021-12-15 18:35:42.870 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_2
+2021-12-15 18:35:42.871 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateByIdUsingPUT_2
+2021-12-15 18:35:42.872 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingDELETE_3
+2021-12-15 18:35:42.876 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_3
+2021-12-15 18:35:42.877 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateByIdUsingPUT_3
+2021-12-15 18:35:42.880 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingDELETE_4
+2021-12-15 18:35:42.884 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_4
+2021-12-15 18:35:42.885 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateByIdUsingPUT_4
+2021-12-15 18:35:42.887 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_7
+2021-12-15 18:35:42.900 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_8
+2021-12-15 18:35:42.908 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingDELETE_5
+2021-12-15 18:35:42.911 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_5
+2021-12-15 18:35:42.913 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateByIdUsingPUT_5
+2021-12-15 18:35:43.008 febs [main] INFO  o.s.s.quartz.SchedulerFactoryBean - Will start Quartz Scheduler [MyScheduler] in 1 seconds
+2021-12-15 18:35:43.022 febs [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9529"]
+2021-12-15 18:35:43.048 febs [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9529 (http) with context path ''
+2021-12-15 18:35:43.050 febs [main] INFO  cc.mrbird.febs.FebsApplication - Started FebsApplication in 10.195 seconds (JVM running for 13.39)
+2021-12-15 18:35:43.058 febs [scheduling-1] INFO  cc.mrbird.febs.common.task.CacheTask - delete expired user
+2021-12-15 18:35:43.060 febs [main] INFO  c.m.f.common.runner.CacheInitRunner - Redis连接中 ······
+2021-12-15 18:35:43.061 febs [main] INFO  c.m.f.common.runner.CacheInitRunner - 缓存初始化 ······
+2021-12-15 18:35:43.061 febs [main] INFO  c.m.f.common.runner.CacheInitRunner - 缓存用户数据 ······
+2021-12-15 18:35:43.097 febs [main] INFO  p6spy - 2021-12-15 18:35:43 | 耗时 7 ms | SQL 语句：
+SELECT USER_ID,description,password,modify_time,email,ssex,mobile,dept_id,avatar,last_login_time,create_time,status,username FROM t_user;
+2021-12-15 18:35:43.126 febs [main] INFO  p6spy - 2021-12-15 18:35:43 | 耗时 25 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.password, u.email, u.mobile, u. STATUS, u.create_time createTime, u.ssex, d.dept_id deptId, d.dept_name deptName, u.AVATAR, u.DESCRIPTION, u.LAST_LOGIN_TIME lastLoginTime, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'mrbird' group by u.username, u.user_id, u.password, u.email, u.mobile, u.STATUS, u.create_time, u.ssex, d.dept_id, d.dept_name, u.AVATAR, u.DESCRIPTION, u.LAST_LOGIN_TIME;
+2021-12-15 18:35:43.164 febs [main] INFO  p6spy - 2021-12-15 18:35:43 | 耗时 0 ms | SQL 语句：
+select r.* from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'mrbird';
+2021-12-15 18:35:43.190 febs [main] INFO  p6spy - 2021-12-15 18:35:43 | 耗时 16 ms | SQL 语句：
+select distinct m.perms from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) left join t_role_menu rm on (rm.role_id = r.role_id) left join t_menu m on (m.menu_id = rm.menu_id) where u.username = 'mrbird' and m.perms is not null and m.perms <> '';
+2021-12-15 18:35:43.210 febs [main] INFO  p6spy - 2021-12-15 18:35:43 | 耗时 8 ms | SQL 语句：
+SELECT USER_ID,layout,color,multi_page,fix_siderbar,fix_header,theme FROM t_user_config WHERE USER_ID='1' ;
+2021-12-15 18:35:43.215 febs [main] INFO  p6spy - 2021-12-15 18:35:43 | 耗时 2 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.password, u.email, u.mobile, u. STATUS, u.create_time createTime, u.ssex, d.dept_id deptId, d.dept_name deptName, u.AVATAR, u.DESCRIPTION, u.LAST_LOGIN_TIME lastLoginTime, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'scott' group by u.username, u.user_id, u.password, u.email, u.mobile, u.STATUS, u.create_time, u.ssex, d.dept_id, d.dept_name, u.AVATAR, u.DESCRIPTION, u.LAST_LOGIN_TIME;
+2021-12-15 18:35:43.218 febs [main] INFO  p6spy - 2021-12-15 18:35:43 | 耗时 0 ms | SQL 语句：
+select r.* from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'scott';
+2021-12-15 18:35:43.221 febs [main] INFO  p6spy - 2021-12-15 18:35:43 | 耗时 1 ms | SQL 语句：
+select distinct m.perms from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) left join t_role_menu rm on (rm.role_id = r.role_id) left join t_menu m on (m.menu_id = rm.menu_id) where u.username = 'scott' and m.perms is not null and m.perms <> '';
+2021-12-15 18:35:43.224 febs [main] INFO  p6spy - 2021-12-15 18:35:43 | 耗时 0 ms | SQL 语句：
+SELECT USER_ID,layout,color,multi_page,fix_siderbar,fix_header,theme FROM t_user_config WHERE USER_ID='2' ;
+2021-12-15 18:35:43.227 febs [main] INFO  p6spy - 2021-12-15 18:35:43 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.password, u.email, u.mobile, u. STATUS, u.create_time createTime, u.ssex, d.dept_id deptId, d.dept_name deptName, u.AVATAR, u.DESCRIPTION, u.LAST_LOGIN_TIME lastLoginTime, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'jack' group by u.username, u.user_id, u.password, u.email, u.mobile, u.STATUS, u.create_time, u.ssex, d.dept_id, d.dept_name, u.AVATAR, u.DESCRIPTION, u.LAST_LOGIN_TIME;
+2021-12-15 18:35:43.230 febs [main] INFO  p6spy - 2021-12-15 18:35:43 | 耗时 0 ms | SQL 语句：
+select r.* from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'jack';
+2021-12-15 18:35:43.234 febs [main] INFO  p6spy - 2021-12-15 18:35:43 | 耗时 1 ms | SQL 语句：
+select distinct m.perms from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) left join t_role_menu rm on (rm.role_id = r.role_id) left join t_menu m on (m.menu_id = rm.menu_id) where u.username = 'jack' and m.perms is not null and m.perms <> '';
+2021-12-15 18:35:43.238 febs [main] INFO  p6spy - 2021-12-15 18:35:43 | 耗时 0 ms | SQL 语句：
+SELECT USER_ID,layout,color,multi_page,fix_siderbar,fix_header,theme FROM t_user_config WHERE USER_ID='12' ;
+2021-12-15 18:35:43.238 febs [main] INFO  c.m.f.common.runner.StartedUpRunner -  __    ___   _      ___   _     ____ _____  ____ 
+2021-12-15 18:35:43.238 febs [main] INFO  c.m.f.common.runner.StartedUpRunner - / /`  / / \ | |\/| | |_) | |   | |_   | |  | |_  
+2021-12-15 18:35:43.238 febs [main] INFO  c.m.f.common.runner.StartedUpRunner - \_\_, \_\_/ |_|  | |_|   |_|__ |_|__  |_|  |_|__ 
+2021-12-15 18:35:43.238 febs [main] INFO  c.m.f.common.runner.StartedUpRunner -                                                       
+2021-12-15 18:35:43.239 febs [main] INFO  c.m.f.common.runner.StartedUpRunner - FEBS 启动完毕，时间：2021-12-15T18:35:43.239
+2021-12-15 18:35:43.478 febs [RMI TCP Connection(4)-192.168.1.5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-15 18:35:43.479 febs [RMI TCP Connection(4)-192.168.1.5] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-12-15 18:35:43.493 febs [RMI TCP Connection(4)-192.168.1.5] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+2021-12-15 18:35:43.504 febs [RMI TCP Connection(3)-192.168.1.5] INFO  p6spy - 2021-12-15 18:35:43 | 耗时 0 ms | SQL 语句：
+select 1;
+2021-12-15 18:35:44.023 febs [Quartz Scheduler [MyScheduler]] INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now, after delay of 1 seconds
+2021-12-15 18:35:44.046 febs [Quartz Scheduler [MyScheduler]] INFO  o.s.s.quartz.LocalDataSourceJobStore - ClusterManager: detected 1 failed or restarted instances.
+2021-12-15 18:35:44.046 febs [Quartz Scheduler [MyScheduler]] INFO  o.s.s.quartz.LocalDataSourceJobStore - ClusterManager: Scanning for instance "WIN-ETS2DEK9JHC1624364126362"'s failed in-progress jobs.
+2021-12-15 18:35:44.059 febs [Quartz Scheduler [MyScheduler]] INFO  p6spy - 
+2021-12-15 18:35:44.059 febs [Quartz Scheduler [MyScheduler]] INFO  org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_WIN-ETS2DEK9JHC1639564539624 started.
+2021-12-15 18:35:44.064 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:35:44.064 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:35:56.061 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:35:59.070 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:35:59.070 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:36:08.061 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:36:09.341 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:36:14.074 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:36:14.074 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:36:20.062 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:36:29.089 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:36:29.089 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:36:32.062 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:36:35.034 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:36:44.063 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:36:44.201 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:36:44.201 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:36:56.080 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:36:59.084 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:36:59.084 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:36:59.550 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:37:08.063 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:37:14.116 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:37:14.116 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:37:20.064 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:37:27.233 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:37:29.084 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:37:29.084 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:37:32.065 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:37:44.064 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:37:44.122 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:37:44.122 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:37:52.011 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:37:56.064 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:37:59.126 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:37:59.126 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:38:08.064 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:38:14.126 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:38:14.126 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:38:17.709 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:38:20.064 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:38:29.134 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:38:29.134 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:38:32.065 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:38:41.579 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:38:44.065 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:38:44.135 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:38:44.135 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:38:56.068 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:38:59.126 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:38:59.126 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:39:06.270 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:39:08.066 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:39:14.115 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:39:14.115 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:39:20.066 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:39:29.121 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:39:29.122 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:39:32.066 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:39:32.697 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:39:44.066 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:39:44.123 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:39:44.124 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:39:56.067 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:39:59.128 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:39:59.129 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:40:01.098 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:40:08.068 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:40:14.130 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:40:14.130 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:40:20.068 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:40:28.204 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:40:29.173 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:40:29.174 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:40:32.070 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:40:44.071 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:40:44.137 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:40:44.137 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:40:51.965 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:40:56.070 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:40:59.126 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:40:59.127 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:41:08.071 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:41:14.160 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:41:14.160 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:41:18.172 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:41:20.071 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:41:29.130 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:41:29.131 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:41:32.072 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:41:43.358 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:41:44.074 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:41:44.147 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:41:44.147 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:41:56.074 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:41:59.151 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:41:59.151 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:42:06.493 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:42:08.075 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:42:14.135 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:42:14.135 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:42:20.083 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:42:29.163 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:42:29.163 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:42:32.081 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:42:32.802 febs [http-nio-9529-exec-3] INFO  c.m.febs.common.aspect.LimitAspect - IP:127.0.0.1 第 1 次访问key为 [limit_login127.0.0.1]，描述为 [登录接口] 的接口
+2021-12-15 18:42:32.858 febs [http-nio-9529-exec-3] INFO  p6spy - 2021-12-15 18:42:32 | 耗时 3 ms | SQL 语句：
+UPDATE t_user SET last_login_time='2021-12-15T18:42:32.832+0800' WHERE (username = 'mrbird');
+2021-12-15 18:42:32.866 febs [http-nio-9529-exec-3] INFO  p6spy - 2021-12-15 18:42:32 | 耗时 6 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.password, u.email, u.mobile, u. STATUS, u.create_time createTime, u.ssex, d.dept_id deptId, d.dept_name deptName, u.AVATAR, u.DESCRIPTION, u.LAST_LOGIN_TIME lastLoginTime, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'mrbird' group by u.username, u.user_id, u.password, u.email, u.mobile, u.STATUS, u.create_time, u.ssex, d.dept_id, d.dept_name, u.AVATAR, u.DESCRIPTION, u.LAST_LOGIN_TIME;
+2021-12-15 18:42:32.875 febs [http-nio-9529-exec-3] INFO  p6spy - 
+2021-12-15 18:42:32.923 febs [http-nio-9529-exec-3] INFO  p6spy - 2021-12-15 18:42:32 | 耗时 34 ms | SQL 语句：
+INSERT INTO t_login_log ( login_time, ip, location, username ) VALUES ( '2021-12-15T18:42:32.879+0800', '127.0.0.1', '', 'mrbird' );
+2021-12-15 18:42:32.928 febs [http-nio-9529-exec-3] INFO  p6spy - 
+2021-12-15 18:42:33.006 febs [http-nio-9529-exec-5] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 18:42:33.035 febs [http-nio-9529-exec-5] INFO  p6spy - 2021-12-15 18:42:33 | 耗时 6 ms | SQL 语句：
+select m.* from t_menu m where m.type <> 1 and m.MENU_ID in (select distinct rm.menu_id from t_role_menu rm left join t_role r on (rm.role_id = r.role_id) left join t_user_role ur on (ur.role_id = r.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'mrbird') order by m.order_num;
+2021-12-15 18:42:35.914 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:42:42.049 febs [http-nio-9529-exec-7] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 18:42:42.127 febs [http-nio-9529-exec-7] INFO  p6spy - 2021-12-15 18:42:42 | 耗时 22 ms | SQL 语句：
+SELECT COUNT(1) FROM user_info;
+2021-12-15 18:42:42.132 febs [http-nio-9529-exec-7] INFO  p6spy - 2021-12-15 18:42:42 | 耗时 1 ms | SQL 语句：
+SELECT id,address,code,born,sex,ip_address,uppwer,windows,phone,idcard,name,pwd,age,email FROM user_info LIMIT 0,10;
+2021-12-15 18:42:44.082 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:42:44.176 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:42:44.176 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:42:47.797 febs [http-nio-9529-exec-9] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 18:42:56.084 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:42:59.152 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:42:59.152 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:43:04.056 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:43:04.264 febs [http-nio-9529-exec-9] INFO  p6spy - 2021-12-15 18:43:04 | 耗时 16457 ms | SQL 语句：
+SELECT COUNT(1) FROM scenic_info;
+2021-12-15 18:43:04.268 febs [http-nio-9529-exec-9] INFO  p6spy - 2021-12-15 18:43:04 | 耗时 2 ms | SQL 语句：
+SELECT id,area,sold,web_img,address,scenic_name,code,level,link,scenic_price,history,hot,point FROM scenic_info LIMIT 0,10;
+2021-12-15 18:43:08.083 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:43:14.180 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:43:14.180 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:43:20.083 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:43:29.185 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:43:29.185 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:43:29.831 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:43:32.084 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:43:44.085 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:43:44.192 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:43:44.193 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:43:44.355 febs [http-nio-9529-exec-2] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 18:43:56.087 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:43:57.751 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:43:59.156 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:43:59.156 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:44:01.512 febs [http-nio-9529-exec-2] INFO  p6spy - 2021-12-15 18:44:01 | 耗时 17153 ms | SQL 语句：
+SELECT COUNT(1) FROM scenic_info;
+2021-12-15 18:44:01.516 febs [http-nio-9529-exec-2] INFO  p6spy - 2021-12-15 18:44:01 | 耗时 3 ms | SQL 语句：
+SELECT id,area,sold,web_img,address,scenic_name,code,level,link,scenic_price,history,hot,point FROM scenic_info LIMIT 10,10;
+2021-12-15 18:44:08.085 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:44:14.175 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:44:14.176 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:44:19.693 febs [http-nio-9529-exec-3] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 18:44:19.748 febs [http-nio-9529-exec-3] INFO  p6spy - 2021-12-15 18:44:19 | 耗时 47 ms | SQL 语句：
+SELECT COUNT(1) FROM stay_info;
+2021-12-15 18:44:19.749 febs [http-nio-9529-exec-3] INFO  p6spy - 2021-12-15 18:44:19 | 耗时 0 ms | SQL 语句：
+SELECT id,web_img,code,stay_price,stay_name,stay_address,point FROM stay_info LIMIT 0,10;
+2021-12-15 18:44:20.085 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:44:21.781 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:44:24.177 febs [http-nio-9529-exec-6] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 18:44:24.178 febs [http-nio-9529-exec-7] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 18:44:24.199 febs [http-nio-9529-exec-7] INFO  p6spy - 2021-12-15 18:44:24 | 耗时 5 ms | SQL 语句：
+SELECT DEPT_ID,dept_name,modify_time,create_time,order_num,parent_id FROM t_dept ORDER BY order_num ASC;
+2021-12-15 18:44:24.210 febs [http-nio-9529-exec-6] INFO  p6spy - 2021-12-15 18:44:24 | 耗时 17 ms | SQL 语句：
+SELECT COUNT(1) FROM t_role;
+2021-12-15 18:44:24.211 febs [http-nio-9529-exec-6] INFO  p6spy - 2021-12-15 18:44:24 | 耗时 0 ms | SQL 语句：
+SELECT ROLE_ID,modify_time,create_time,role_name,remark FROM t_role LIMIT 0,10;
+2021-12-15 18:44:29.164 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:44:29.164 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:44:30.225 febs [http-nio-9529-exec-9] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 18:44:30.249 febs [http-nio-9529-exec-9] INFO  p6spy - 2021-12-15 18:44:30 | 耗时 9 ms | SQL 语句：
+SELECT COUNT(1) FROM question_info qi LEFT JOIN user_info ui ON ui.CODE = qi.quest_user;
+2021-12-15 18:44:30.250 febs [http-nio-9529-exec-9] INFO  p6spy - 2021-12-15 18:44:30 | 耗时 0 ms | SQL 语句：
+SELECT qi.id, qi.quest_title AS questTitle, qi.quest_date AS questDate, ui.`name` FROM question_info qi LEFT JOIN user_info ui ON ui.CODE = qi.quest_user LIMIT 0,10;
+2021-12-15 18:44:32.085 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:44:42.102 febs [http-nio-9529-exec-1] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 18:44:42.103 febs [http-nio-9529-exec-3] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 18:44:42.107 febs [http-nio-9529-exec-3] INFO  p6spy - 2021-12-15 18:44:42 | 耗时 0 ms | SQL 语句：
+SELECT DEPT_ID,dept_name,modify_time,create_time,order_num,parent_id FROM t_dept ORDER BY order_num ASC;
+2021-12-15 18:44:42.111 febs [http-nio-9529-exec-1] INFO  p6spy - 2021-12-15 18:44:42 | 耗时 3 ms | SQL 语句：
+SELECT COUNT(1) FROM t_role;
+2021-12-15 18:44:42.112 febs [http-nio-9529-exec-1] INFO  p6spy - 2021-12-15 18:44:42 | 耗时 0 ms | SQL 语句：
+SELECT ROLE_ID,modify_time,create_time,role_name,remark FROM t_role LIMIT 0,10;
+2021-12-15 18:44:44.086 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:44:44.161 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:44:44.162 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:44:46.863 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:44:55.361 febs [http-nio-9529-exec-6] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 18:44:55.361 febs [http-nio-9529-exec-8] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 18:44:55.365 febs [http-nio-9529-exec-8] INFO  p6spy - 2021-12-15 18:44:55 | 耗时 0 ms | SQL 语句：
+SELECT id,address,code,born,sex,ip_address,uppwer,windows,phone,idcard,name,pwd,age,email FROM user_info;
+2021-12-15 18:44:55.370 febs [http-nio-9529-exec-9] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 18:44:56.088 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:44:56.120 febs [http-nio-9529-exec-9] INFO  p6spy - 2021-12-15 18:44:56 | 耗时 746 ms | SQL 语句：
+SELECT id,area,sold,web_img,address,scenic_name,code,level,link,scenic_price,history,hot,point FROM scenic_info;
+2021-12-15 18:44:56.189 febs [http-nio-9529-exec-6] INFO  p6spy - 2021-12-15 18:44:56 | 耗时 820 ms | SQL 语句：
+SELECT COUNT(1) FROM order_info oi LEFT JOIN user_info ui ON oi.user_code = ui.CODE LEFT JOIN scenic_info si ON oi.scenic_code = si.CODE;
+2021-12-15 18:44:56.880 febs [http-nio-9529-exec-6] INFO  p6spy - 2021-12-15 18:44:56 | 耗时 690 ms | SQL 语句：
+SELECT oi.id, oi.code, oi.user_code AS userCode, oi.order_num AS orderNum, oi.scenic_code AS scenicCode, oi.order_date AS orderDate, oi.is_use AS isUse, si.scenic_name AS scenicName, ui.NAME FROM order_info oi LEFT JOIN user_info ui ON oi.user_code = ui. CODE LEFT JOIN scenic_info si ON oi.scenic_code = si.CODE LIMIT 0,10;
+2021-12-15 18:44:59.189 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:44:59.189 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:45:08.102 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:45:10.897 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:45:14.205 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:45:14.205 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:45:20.087 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:45:29.228 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:45:29.228 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:45:32.088 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:45:37.907 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:45:44.087 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:45:44.215 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:45:44.215 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:45:56.087 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:45:59.221 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:45:59.221 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:46:07.746 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:46:08.088 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:46:14.028 febs [http-nio-9529-exec-4] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 18:46:14.182 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:46:14.183 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:46:15.204 febs [http-nio-9529-exec-4] INFO  p6spy - 2021-12-15 18:46:15 | 耗时 1163 ms | SQL 语句：
+SELECT COUNT(1) FROM scenic_info WHERE (address LIKE '%北京%' OR scenic_name LIKE '%北京%');
+2021-12-15 18:46:15.211 febs [http-nio-9529-exec-4] INFO  p6spy - 2021-12-15 18:46:15 | 耗时 6 ms | SQL 语句：
+SELECT id,area,sold,web_img,address,scenic_name,code,level,link,scenic_price,history,hot,point FROM scenic_info WHERE (address LIKE '%北京%' OR scenic_name LIKE '%北京%') LIMIT 0,10;
+2021-12-15 18:46:20.117 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:46:29.219 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:46:29.219 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:46:32.088 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:46:36.690 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:46:44.088 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:46:44.205 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:46:44.205 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:46:56.089 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:46:59.212 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:46:59.212 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:47:02.822 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:47:08.089 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:47:14.214 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:47:14.214 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:47:20.090 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:47:29.197 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:47:29.197 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:47:31.306 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:47:32.091 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:47:44.091 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:47:44.246 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:47:44.246 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:47:56.091 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:47:59.225 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:47:59.225 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:47:59.892 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:48:08.091 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:48:14.228 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:48:14.228 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:48:20.091 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:48:27.869 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:48:29.246 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:48:29.247 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:48:32.092 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:48:44.092 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:48:44.228 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:48:44.229 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:48:51.738 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:48:56.092 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:48:59.201 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:48:59.201 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:49:02.371 febs [http-nio-9529-exec-8] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 18:49:02.401 febs [http-nio-9529-exec-8] INFO  p6spy - 2021-12-15 18:49:02 | 耗时 27 ms | SQL 语句：
+SELECT COUNT(1) FROM user_info;
+2021-12-15 18:49:02.402 febs [http-nio-9529-exec-8] INFO  p6spy - 2021-12-15 18:49:02 | 耗时 0 ms | SQL 语句：
+SELECT id,address,code,born,sex,ip_address,uppwer,windows,phone,idcard,name,pwd,age,email FROM user_info LIMIT 0,10;
+2021-12-15 18:49:07.589 febs [http-nio-9529-exec-9] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 18:49:08.093 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:49:09.108 febs [http-nio-9529-exec-1] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 18:49:09.108 febs [http-nio-9529-exec-3] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 18:49:09.114 febs [http-nio-9529-exec-1] INFO  p6spy - 2021-12-15 18:49:09 | 耗时 2 ms | SQL 语句：
+SELECT DEPT_ID,dept_name,modify_time,create_time,order_num,parent_id FROM t_dept ORDER BY order_num ASC;
+2021-12-15 18:49:09.129 febs [http-nio-9529-exec-3] INFO  p6spy - 2021-12-15 18:49:09 | 耗时 15 ms | SQL 语句：
+SELECT COUNT(1) FROM t_role;
+2021-12-15 18:49:09.130 febs [http-nio-9529-exec-3] INFO  p6spy - 2021-12-15 18:49:09 | 耗时 0 ms | SQL 语句：
+SELECT ROLE_ID,modify_time,create_time,role_name,remark FROM t_role LIMIT 0,10;
+2021-12-15 18:49:14.204 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:49:14.204 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:49:16.108 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:49:20.093 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:49:24.054 febs [http-nio-9529-exec-9] INFO  p6spy - 2021-12-15 18:49:24 | 耗时 16461 ms | SQL 语句：
+SELECT COUNT(1) FROM scenic_info;
+2021-12-15 18:49:24.057 febs [http-nio-9529-exec-9] INFO  p6spy - 2021-12-15 18:49:24 | 耗时 2 ms | SQL 语句：
+SELECT id,area,sold,web_img,address,scenic_name,code,level,link,scenic_price,history,hot,point FROM scenic_info LIMIT 0,10;
+2021-12-15 18:49:29.243 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:49:29.243 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:49:32.117 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:49:44.094 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:49:44.265 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:49:44.265 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:49:45.203 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:49:56.095 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:49:59.250 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:49:59.250 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:50:08.095 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:50:12.707 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:50:14.250 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:50:14.251 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:50:20.096 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:50:27.316 febs [http-nio-9529-exec-2] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 18:50:27.317 febs [http-nio-9529-exec-1] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 18:50:27.317 febs [http-nio-9529-exec-3] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 18:50:27.330 febs [http-nio-9529-exec-3] INFO  p6spy - 2021-12-15 18:50:27 | 耗时 11 ms | SQL 语句：
+SELECT id,address,code,born,sex,ip_address,uppwer,windows,phone,idcard,name,pwd,age,email FROM user_info;
+2021-12-15 18:50:27.330 febs [http-nio-9529-exec-1] INFO  p6spy - 2021-12-15 18:50:27 | 耗时 10 ms | SQL 语句：
+SELECT id,web_img,code,stay_price,stay_name,stay_address,point FROM stay_info;
+2021-12-15 18:50:27.396 febs [http-nio-9529-exec-2] INFO  p6spy - 2021-12-15 18:50:27 | 耗时 71 ms | SQL 语句：
+SELECT COUNT(1) FROM stay_order so LEFT JOIN user_info ui ON so.user_code = ui.CODE LEFT JOIN stay_info si ON so.stay_code = si.CODE;
+2021-12-15 18:50:27.397 febs [http-nio-9529-exec-2] INFO  p6spy - 2021-12-15 18:50:27 | 耗时 0 ms | SQL 语句：
+SELECT so.id, so.code, so.stay_code AS stayCode, so.stay_num AS stayNum, so.stay_day AS stayDay, so.stay_date AS stayDate, so.stay_status AS stayStatus, so.user_code AS userCode, si.stay_name AS stayName, ui.name AS userName FROM stay_order so LEFT JOIN user_info ui ON so.user_code = ui.CODE LEFT JOIN stay_info si ON so.stay_code = si.CODE LIMIT 0,10;
+2021-12-15 18:50:29.260 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:50:29.261 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:50:32.097 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:50:38.376 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:50:44.097 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:50:44.234 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:50:44.234 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:50:56.098 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:50:59.260 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:50:59.261 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:51:07.796 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:51:08.099 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:51:14.263 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:51:14.263 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:51:20.099 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:51:29.264 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:51:29.265 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:51:32.099 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:51:32.155 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:51:44.099 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:51:44.239 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:51:44.239 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:51:55.768 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:51:56.099 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:51:59.246 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:51:59.246 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:52:08.100 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:52:14.249 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:52:14.249 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:52:20.100 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:52:23.799 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:52:29.278 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:52:29.278 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:52:32.101 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:52:44.103 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:52:44.278 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:52:44.278 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:52:50.142 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:52:56.104 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:52:59.247 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:52:59.247 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:53:08.104 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:53:14.274 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:53:14.274 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:53:18.570 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:53:20.104 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:53:29.253 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:53:29.254 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:53:32.104 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:53:44.104 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:53:44.254 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:53:44.255 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:53:46.118 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:53:56.105 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:53:59.253 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:53:59.253 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:54:08.105 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:54:14.258 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:54:14.258 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:54:14.948 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:54:20.105 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:54:29.257 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:54:29.257 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:54:32.112 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:54:39.029 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:54:44.105 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:54:44.257 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:54:44.258 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:54:56.106 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:54:59.260 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:54:59.260 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:55:02.346 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:55:08.106 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:55:14.265 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:55:14.266 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:55:20.108 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:55:29.263 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:55:29.263 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:55:30.426 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:55:32.109 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:55:44.109 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:55:44.265 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:55:44.265 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:55:56.109 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:55:57.216 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:55:59.272 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:55:59.272 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:56:08.109 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:56:14.269 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:56:14.269 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:56:20.109 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:56:23.910 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:56:29.269 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:56:29.269 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:56:32.113 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:56:44.110 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:56:44.269 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:56:44.269 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:56:53.656 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:56:56.110 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:56:59.276 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:56:59.277 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:57:08.112 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:57:14.271 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:57:14.271 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:57:20.113 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:57:22.852 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:57:29.278 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:57:29.278 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:57:32.113 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:57:44.114 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:57:44.272 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:57:44.273 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:57:47.572 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:57:56.114 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:57:59.282 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:57:59.282 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:58:08.115 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:58:14.290 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:58:14.290 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:58:17.557 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:58:20.116 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:58:29.278 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:58:29.278 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:58:32.116 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:58:44.117 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:58:44.283 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:58:44.283 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:58:45.877 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:58:56.118 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:58:59.283 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:58:59.283 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:59:08.118 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:59:14.287 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:59:14.287 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:59:15.776 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:59:20.118 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:59:29.292 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:59:29.293 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:59:32.118 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:59:40.685 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 18:59:44.118 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:59:44.284 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:59:44.284 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:59:45.776 febs [http-nio-9529-exec-8] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 18:59:46.775 febs [http-nio-9529-exec-8] INFO  p6spy - 2021-12-15 18:59:46 | 耗时 993 ms | SQL 语句：
+SELECT COUNT(1) FROM scenic_info WHERE (address LIKE '%a%' OR scenic_name LIKE '%a%');
+2021-12-15 18:59:47.534 febs [http-nio-9529-exec-8] INFO  p6spy - 2021-12-15 18:59:47 | 耗时 758 ms | SQL 语句：
+SELECT id,area,sold,web_img,address,scenic_name,code,level,link,scenic_price,history,hot,point FROM scenic_info WHERE (address LIKE '%a%' OR scenic_name LIKE '%a%') LIMIT 0,10;
+2021-12-15 18:59:56.122 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 18:59:59.288 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 18:59:59.288 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:00:08.119 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:00:08.363 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 19:00:14.290 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:00:14.290 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:00:20.126 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:00:29.292 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:00:29.292 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:00:32.119 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:00:38.182 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 19:00:44.120 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:00:44.309 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:00:44.309 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:00:56.121 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:00:59.295 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:00:59.295 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:01:06.761 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 19:01:08.122 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:01:14.302 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:01:14.302 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:01:20.122 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:01:29.317 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:01:29.317 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:01:32.141 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:01:33.754 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 19:01:44.138 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:01:44.301 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:01:44.302 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:01:56.138 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:01:59.299 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:01:59.299 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:02:00.159 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 19:02:08.138 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:02:14.318 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:02:14.318 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:02:20.150 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:02:29.307 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:02:29.307 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:02:29.969 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 19:02:32.138 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:02:44.138 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:02:44.311 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:02:44.311 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:02:53.971 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 19:02:56.139 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:02:59.317 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:02:59.317 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:03:08.139 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:03:12.856 febs [http-nio-9529-exec-3] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 19:03:13.757 febs [http-nio-9529-exec-3] INFO  p6spy - 2021-12-15 19:03:13 | 耗时 895 ms | SQL 语句：
+SELECT COUNT(1) FROM scenic_info WHERE (address LIKE '%a%' OR scenic_name LIKE '%a%');
+2021-12-15 19:03:14.313 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:03:14.314 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:03:14.394 febs [http-nio-9529-exec-3] INFO  p6spy - 2021-12-15 19:03:14 | 耗时 635 ms | SQL 语句：
+SELECT id,area,sold,web_img,address,scenic_name,code,level,link,scenic_price,history,hot,point FROM scenic_info WHERE (address LIKE '%a%' OR scenic_name LIKE '%a%') LIMIT 0,10;
+2021-12-15 19:03:20.142 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:03:20.999 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 19:03:29.315 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:03:29.315 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:03:32.139 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:03:44.139 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:03:44.317 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:03:44.318 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:03:46.945 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 19:03:56.139 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:03:59.324 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:03:59.324 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:04:08.139 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:04:14.326 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:04:14.326 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:04:16.241 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 19:04:19.287 febs [http-nio-9529-exec-5] INFO  c.m.febs.common.aspect.LimitAspect - IP:127.0.0.1 第 1 次访问key为 [limit_login127.0.0.1]，描述为 [登录接口] 的接口
+2021-12-15 19:04:19.294 febs [http-nio-9529-exec-5] INFO  p6spy - 2021-12-15 19:04:19 | 耗时 3 ms | SQL 语句：
+UPDATE t_user SET last_login_time='2021-12-15T19:04:19.288+0800' WHERE (username = 'mrbird');
+2021-12-15 19:04:19.299 febs [http-nio-9529-exec-5] INFO  p6spy - 2021-12-15 19:04:19 | 耗时 4 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.password, u.email, u.mobile, u. STATUS, u.create_time createTime, u.ssex, d.dept_id deptId, d.dept_name deptName, u.AVATAR, u.DESCRIPTION, u.LAST_LOGIN_TIME lastLoginTime, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'mrbird' group by u.username, u.user_id, u.password, u.email, u.mobile, u.STATUS, u.create_time, u.ssex, d.dept_id, d.dept_name, u.AVATAR, u.DESCRIPTION, u.LAST_LOGIN_TIME;
+2021-12-15 19:04:19.308 febs [http-nio-9529-exec-5] INFO  p6spy - 
+2021-12-15 19:04:19.315 febs [http-nio-9529-exec-5] INFO  p6spy - 2021-12-15 19:04:19 | 耗时 3 ms | SQL 语句：
+INSERT INTO t_login_log ( login_time, ip, location, username ) VALUES ( '2021-12-15T19:04:19.309+0800', '127.0.0.1', '', 'mrbird' );
+2021-12-15 19:04:19.320 febs [http-nio-9529-exec-5] INFO  p6spy - 
+2021-12-15 19:04:19.336 febs [http-nio-9529-exec-7] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 19:04:19.342 febs [http-nio-9529-exec-7] INFO  p6spy - 2021-12-15 19:04:19 | 耗时 4 ms | SQL 语句：
+select m.* from t_menu m where m.type <> 1 and m.MENU_ID in (select distinct rm.menu_id from t_role_menu rm left join t_role r on (rm.role_id = r.role_id) left join t_user_role ur on (ur.role_id = r.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'mrbird') order by m.order_num;
+2021-12-15 19:04:20.140 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:04:25.919 febs [http-nio-9529-exec-6] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 19:04:26.957 febs [http-nio-9529-exec-6] INFO  p6spy - 2021-12-15 19:04:26 | 耗时 1034 ms | SQL 语句：
+SELECT COUNT(1) FROM scenic_info WHERE (address LIKE '%北京%' OR scenic_name LIKE '%北京%');
+2021-12-15 19:04:26.963 febs [http-nio-9529-exec-6] INFO  p6spy - 2021-12-15 19:04:26 | 耗时 5 ms | SQL 语句：
+SELECT id,area,sold,web_img,address,scenic_name,code,level,link,scenic_price,history,hot,point FROM scenic_info WHERE (address LIKE '%北京%' OR scenic_name LIKE '%北京%') LIMIT 0,10;
+2021-12-15 19:04:29.323 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:04:29.323 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:04:32.143 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:04:33.403 febs [http-nio-9529-exec-3] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 19:04:34.608 febs [http-nio-9529-exec-3] INFO  p6spy - 2021-12-15 19:04:34 | 耗时 1202 ms | SQL 语句：
+SELECT COUNT(1) FROM scenic_info WHERE (address LIKE '%北京%' OR scenic_name LIKE '%北京%');
+2021-12-15 19:04:34.615 febs [http-nio-9529-exec-3] INFO  p6spy - 2021-12-15 19:04:34 | 耗时 6 ms | SQL 语句：
+SELECT id,area,sold,web_img,address,scenic_name,code,level,link,scenic_price,history,hot,point FROM scenic_info WHERE (address LIKE '%北京%' OR scenic_name LIKE '%北京%') LIMIT 10,10;
+2021-12-15 19:04:44.153 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:04:44.327 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:04:44.327 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:04:45.151 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 19:04:55.208 febs [http-nio-9529-exec-2] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 19:04:55.238 febs [http-nio-9529-exec-2] INFO  p6spy - 2021-12-15 19:04:55 | 耗时 26 ms | SQL 语句：
+SELECT COUNT(1) FROM user_info;
+2021-12-15 19:04:55.239 febs [http-nio-9529-exec-2] INFO  p6spy - 2021-12-15 19:04:55 | 耗时 0 ms | SQL 语句：
+SELECT id,address,code,born,sex,ip_address,uppwer,windows,phone,idcard,name,pwd,age,email FROM user_info LIMIT 0,10;
+2021-12-15 19:04:56.141 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:04:58.428 febs [http-nio-9529-exec-5] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 19:04:59.330 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:04:59.330 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:05:08.142 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:05:12.718 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 19:05:14.332 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:05:14.332 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:05:14.886 febs [http-nio-9529-exec-5] INFO  p6spy - 2021-12-15 19:05:14 | 耗时 16454 ms | SQL 语句：
+SELECT COUNT(1) FROM scenic_info;
+2021-12-15 19:05:14.897 febs [http-nio-9529-exec-5] INFO  p6spy - 2021-12-15 19:05:14 | 耗时 10 ms | SQL 语句：
+SELECT id,area,sold,web_img,address,scenic_name,code,level,link,scenic_price,history,hot,point FROM scenic_info LIMIT 0,10;
+2021-12-15 19:05:20.141 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:05:20.290 febs [http-nio-9529-exec-8] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 19:05:20.291 febs [http-nio-9529-exec-6] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 19:05:20.298 febs [http-nio-9529-exec-6] INFO  p6spy - 2021-12-15 19:05:20 | 耗时 5 ms | SQL 语句：
+SELECT DEPT_ID,dept_name,modify_time,create_time,order_num,parent_id FROM t_dept ORDER BY order_num ASC;
+2021-12-15 19:05:20.311 febs [http-nio-9529-exec-8] INFO  p6spy - 2021-12-15 19:05:20 | 耗时 16 ms | SQL 语句：
+SELECT COUNT(1) FROM t_role;
+2021-12-15 19:05:20.313 febs [http-nio-9529-exec-8] INFO  p6spy - 2021-12-15 19:05:20 | 耗时 0 ms | SQL 语句：
+SELECT ROLE_ID,modify_time,create_time,role_name,remark FROM t_role LIMIT 0,10;
+2021-12-15 19:05:24.661 febs [http-nio-9529-exec-10] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 19:05:24.662 febs [http-nio-9529-exec-3] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 19:05:24.665 febs [http-nio-9529-exec-3] INFO  p6spy - 2021-12-15 19:05:24 | 耗时 0 ms | SQL 语句：
+SELECT DEPT_ID,dept_name,modify_time,create_time,order_num,parent_id FROM t_dept ORDER BY order_num ASC;
+2021-12-15 19:05:24.669 febs [http-nio-9529-exec-10] INFO  p6spy - 2021-12-15 19:05:24 | 耗时 4 ms | SQL 语句：
+SELECT COUNT(1) FROM t_role;
+2021-12-15 19:05:24.670 febs [http-nio-9529-exec-10] INFO  p6spy - 2021-12-15 19:05:24 | 耗时 0 ms | SQL 语句：
+SELECT ROLE_ID,modify_time,create_time,role_name,remark FROM t_role LIMIT 0,10;
+2021-12-15 19:05:29.333 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:05:29.333 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:05:32.142 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:05:36.120 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 19:05:44.143 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:05:44.334 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:05:44.335 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:05:45.242 febs [http-nio-9529-exec-2] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 19:05:45.256 febs [http-nio-9529-exec-2] INFO  p6spy - 2021-12-15 19:05:45 | 耗时 11 ms | SQL 语句：
+SELECT COUNT(1) FROM stay_info;
+2021-12-15 19:05:45.257 febs [http-nio-9529-exec-2] INFO  p6spy - 2021-12-15 19:05:45 | 耗时 0 ms | SQL 语句：
+SELECT id,web_img,code,stay_price,stay_name,stay_address,point FROM stay_info LIMIT 0,10;
+2021-12-15 19:05:48.023 febs [http-nio-9529-exec-5] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 19:05:48.029 febs [http-nio-9529-exec-5] INFO  p6spy - 2021-12-15 19:05:48 | 耗时 2 ms | SQL 语句：
+SELECT COUNT(1) FROM question_info qi LEFT JOIN user_info ui ON ui.CODE = qi.quest_user;
+2021-12-15 19:05:48.031 febs [http-nio-9529-exec-5] INFO  p6spy - 2021-12-15 19:05:48 | 耗时 0 ms | SQL 语句：
+SELECT qi.id, qi.quest_title AS questTitle, qi.quest_date AS questDate, ui.`name` FROM question_info qi LEFT JOIN user_info ui ON ui.CODE = qi.quest_user LIMIT 0,10;
+2021-12-15 19:05:50.235 febs [http-nio-9529-exec-8] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 19:05:50.235 febs [http-nio-9529-exec-10] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 19:05:50.238 febs [http-nio-9529-exec-10] INFO  p6spy - 2021-12-15 19:05:50 | 耗时 0 ms | SQL 语句：
+SELECT id,address,code,born,sex,ip_address,uppwer,windows,phone,idcard,name,pwd,age,email FROM user_info;
+2021-12-15 19:05:50.238 febs [http-nio-9529-exec-3] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 19:05:50.994 febs [http-nio-9529-exec-3] INFO  p6spy - 2021-12-15 19:05:50 | 耗时 751 ms | SQL 语句：
+SELECT id,area,sold,web_img,address,scenic_name,code,level,link,scenic_price,history,hot,point FROM scenic_info;
+2021-12-15 19:05:51.081 febs [http-nio-9529-exec-8] INFO  p6spy - 2021-12-15 19:05:51 | 耗时 841 ms | SQL 语句：
+SELECT COUNT(1) FROM order_info oi LEFT JOIN user_info ui ON oi.user_code = ui.CODE LEFT JOIN scenic_info si ON oi.scenic_code = si.CODE;
+2021-12-15 19:05:51.725 febs [http-nio-9529-exec-8] INFO  p6spy - 2021-12-15 19:05:51 | 耗时 644 ms | SQL 语句：
+SELECT oi.id, oi.code, oi.user_code AS userCode, oi.order_num AS orderNum, oi.scenic_code AS scenicCode, oi.order_date AS orderDate, oi.is_use AS isUse, si.scenic_name AS scenicName, ui.NAME FROM order_info oi LEFT JOIN user_info ui ON oi.user_code = ui. CODE LEFT JOIN scenic_info si ON oi.scenic_code = si.CODE LIMIT 0,10;
+2021-12-15 19:05:54.316 febs [http-nio-9529-exec-9] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 19:05:54.318 febs [http-nio-9529-exec-5] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 19:05:54.322 febs [http-nio-9529-exec-9] INFO  p6spy - 2021-12-15 19:05:54 | 耗时 3 ms | SQL 语句：
+SELECT id,address,code,born,sex,ip_address,uppwer,windows,phone,idcard,name,pwd,age,email FROM user_info;
+2021-12-15 19:05:54.322 febs [http-nio-9529-exec-4] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 19:05:54.325 febs [http-nio-9529-exec-5] INFO  p6spy - 2021-12-15 19:05:54 | 耗时 3 ms | SQL 语句：
+SELECT COUNT(1) FROM stay_order so LEFT JOIN user_info ui ON so.user_code = ui.CODE LEFT JOIN stay_info si ON so.stay_code = si.CODE;
+2021-12-15 19:05:54.326 febs [http-nio-9529-exec-5] INFO  p6spy - 2021-12-15 19:05:54 | 耗时 0 ms | SQL 语句：
+SELECT so.id, so.code, so.stay_code AS stayCode, so.stay_num AS stayNum, so.stay_day AS stayDay, so.stay_date AS stayDate, so.stay_status AS stayStatus, so.user_code AS userCode, si.stay_name AS stayName, ui.name AS userName FROM stay_order so LEFT JOIN user_info ui ON so.user_code = ui.CODE LEFT JOIN stay_info si ON so.stay_code = si.CODE LIMIT 0,10;
+2021-12-15 19:05:54.331 febs [http-nio-9529-exec-4] INFO  p6spy - 2021-12-15 19:05:54 | 耗时 0 ms | SQL 语句：
+SELECT id,web_img,code,stay_price,stay_name,stay_address,point FROM stay_info;
+2021-12-15 19:05:56.152 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:05:59.343 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:05:59.343 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:06:03.831 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 19:06:08.143 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:06:09.805 febs [http-nio-9529-exec-6] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2021-12-15 19:06:14.344 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:06:14.344 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:06:20.144 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:06:29.344 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:06:29.344 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:06:32.145 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:06:33.139 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 19:06:44.145 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:06:44.347 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:06:44.347 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:06:56.146 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:06:58.556 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 19:06:59.348 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:06:59.348 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:07:08.146 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:07:14.345 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:07:14.346 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:07:20.147 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:07:24.887 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 19:07:29.347 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:07:29.347 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:07:32.148 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:07:38.127 febs [http-nio-9529-exec-1] INFO  p6spy - 2021-12-15 19:07:38 | 耗时 16651 ms | SQL 语句：
+SELECT COUNT(1) FROM scenic_info;
+2021-12-15 19:07:38.129 febs [http-nio-9529-exec-1] INFO  p6spy - 2021-12-15 19:07:38 | 耗时 0 ms | SQL 语句：
+SELECT id,area,sold,web_img,address,scenic_name,code,level,link,scenic_price,history,hot,point FROM scenic_info LIMIT 0,15;
+2021-12-15 19:07:38.143 febs [http-nio-9529-exec-1] INFO  p6spy - 2021-12-15 19:07:38 | 耗时 13 ms | SQL 语句：
+SELECT COUNT(1) FROM question_info;
+2021-12-15 19:07:38.144 febs [http-nio-9529-exec-1] INFO  p6spy - 2021-12-15 19:07:38 | 耗时 0 ms | SQL 语句：
+SELECT id,quest_user,code,quest_date,quest_title FROM question_info LIMIT 0,5;
+2021-12-15 19:07:44.149 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:07:44.349 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:07:44.350 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:07:53.763 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 19:07:54.119 febs [http-nio-9529-exec-5] INFO  p6spy - 2021-12-15 19:07:54 | 耗时 16415 ms | SQL 语句：
+SELECT COUNT(1) FROM scenic_info;
+2021-12-15 19:07:54.123 febs [http-nio-9529-exec-5] INFO  p6spy - 2021-12-15 19:07:54 | 耗时 3 ms | SQL 语句：
+SELECT id,area,sold,web_img,address,scenic_name,code,level,link,scenic_price,history,hot,point FROM scenic_info LIMIT 0,15;
+2021-12-15 19:07:54.135 febs [http-nio-9529-exec-5] INFO  p6spy - 2021-12-15 19:07:54 | 耗时 10 ms | SQL 语句：
+SELECT COUNT(1) FROM question_info;
+2021-12-15 19:07:54.136 febs [http-nio-9529-exec-5] INFO  p6spy - 2021-12-15 19:07:54 | 耗时 0 ms | SQL 语句：
+SELECT id,quest_user,code,quest_date,quest_title FROM question_info LIMIT 0,5;
+2021-12-15 19:07:56.148 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:07:59.350 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:07:59.351 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:08:01.129 febs [http-nio-9529-exec-5] INFO  p6spy - 2021-12-15 19:08:01 | 耗时 0 ms | SQL 语句：
+SELECT id,area,sold,web_img,address,scenic_name,code,level,link,scenic_price,history,hot,point FROM scenic_info WHERE id=7 ;
+2021-12-15 19:08:08.151 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:08:14.354 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:08:14.354 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:08:20.148 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:08:22.920 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 19:08:23.535 febs [http-nio-9529-exec-7] INFO  p6spy - 2021-12-15 19:08:23 | 耗时 10 ms | SQL 语句：
+SELECT COUNT(1) FROM question_info;
+2021-12-15 19:08:23.536 febs [http-nio-9529-exec-7] INFO  p6spy - 2021-12-15 19:08:23 | 耗时 0 ms | SQL 语句：
+SELECT id,quest_user,code,quest_date,quest_title FROM question_info LIMIT 0,5;
+2021-12-15 19:08:29.357 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:08:29.357 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:08:32.149 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:08:44.149 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:08:44.364 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:08:44.365 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:08:49.611 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 19:08:56.150 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:08:59.360 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:08:59.360 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:09:00.424 febs [http-nio-9529-exec-1] INFO  p6spy - 2021-12-15 19:09:00 | 耗时 7 ms | SQL 语句：
+SELECT id,address,code,born,sex,ip_address,uppwer,windows,phone,idcard,name,pwd,age,email FROM user_info WHERE (email = '1258846421@qq.com' AND pwd = '3980e4044675f6339248ee0c735c7d72');
+2021-12-15 19:09:01.715 febs [http-nio-9529-exec-1] INFO  p6spy - 2021-12-15 19:09:01 | 耗时 1194 ms | SQL 语句：
+SELECT COUNT(1) FROM order_info oi LEFT JOIN user_info ui ON oi.user_code = ui.CODE LEFT JOIN scenic_info si ON oi.scenic_code = si.CODE WHERE oi.user_code = '025cdb77-d183-4f16-be88-2be3278d03c7';
+2021-12-15 19:09:02.435 febs [http-nio-9529-exec-1] INFO  p6spy - 2021-12-15 19:09:02 | 耗时 719 ms | SQL 语句：
+SELECT oi.id, oi.code, oi.user_code AS userCode, oi.order_num AS orderNum, oi.scenic_code AS scenicCode, oi.order_date AS orderDate, oi.is_use AS isUse, si.* FROM order_info oi LEFT JOIN user_info ui ON oi.user_code = ui. CODE LEFT JOIN scenic_info si ON oi.scenic_code = si.CODE where oi.user_code = '025cdb77-d183-4f16-be88-2be3278d03c7' LIMIT 0,100;
+2021-12-15 19:09:08.151 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:09:12.931 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 19:09:14.362 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:09:14.362 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:09:18.926 febs [http-nio-9529-exec-10] INFO  p6spy - 2021-12-15 19:09:18 | 耗时 16471 ms | SQL 语句：
+SELECT COUNT(1) FROM scenic_info;
+2021-12-15 19:09:18.930 febs [http-nio-9529-exec-10] INFO  p6spy - 2021-12-15 19:09:18 | 耗时 3 ms | SQL 语句：
+SELECT id,area,sold,web_img,address,scenic_name,code,level,link,scenic_price,history,hot,point FROM scenic_info LIMIT 0,15;
+2021-12-15 19:09:18.943 febs [http-nio-9529-exec-10] INFO  p6spy - 2021-12-15 19:09:18 | 耗时 11 ms | SQL 语句：
+SELECT COUNT(1) FROM question_info;
+2021-12-15 19:09:18.944 febs [http-nio-9529-exec-10] INFO  p6spy - 2021-12-15 19:09:18 | 耗时 0 ms | SQL 语句：
+SELECT id,quest_user,code,quest_date,quest_title FROM question_info LIMIT 0,5;
+2021-12-15 19:09:20.150 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:09:26.624 febs [http-nio-9529-exec-7] INFO  p6spy - 2021-12-15 19:09:26 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM question_info;
+2021-12-15 19:09:26.625 febs [http-nio-9529-exec-7] INFO  p6spy - 2021-12-15 19:09:26 | 耗时 0 ms | SQL 语句：
+SELECT id,quest_user,code,quest_date,quest_title FROM question_info LIMIT 0,5;
+2021-12-15 19:09:29.365 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:09:29.365 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:09:32.150 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:09:36.207 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 19:09:44.151 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:09:44.365 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:09:44.365 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:09:47.801 febs [http-nio-9529-exec-3] INFO  p6spy - 2021-12-15 19:09:47 | 耗时 16507 ms | SQL 语句：
+SELECT COUNT(1) FROM scenic_info;
+2021-12-15 19:09:47.804 febs [http-nio-9529-exec-3] INFO  p6spy - 2021-12-15 19:09:47 | 耗时 3 ms | SQL 语句：
+SELECT id,area,sold,web_img,address,scenic_name,code,level,link,scenic_price,history,hot,point FROM scenic_info LIMIT 25,5;
+2021-12-15 19:09:48.832 febs [http-nio-9529-exec-3] INFO  p6spy - 2021-12-15 19:09:48 | 耗时 1023 ms | SQL 语句：
+SELECT COUNT(1) FROM scenic_info WHERE (scenic_name LIKE '%北京%' OR address LIKE '%北京%');
+2021-12-15 19:09:48.840 febs [http-nio-9529-exec-3] INFO  p6spy - 2021-12-15 19:09:48 | 耗时 7 ms | SQL 语句：
+SELECT id,area,sold,web_img,address,scenic_name,code,level,link,scenic_price,history,hot,point FROM scenic_info WHERE (scenic_name LIKE '%北京%' OR address LIKE '%北京%') LIMIT 0,20;
+2021-12-15 19:09:49.751 febs [http-nio-9529-exec-3] INFO  p6spy - 2021-12-15 19:09:49 | 耗时 897 ms | SQL 语句：
+SELECT COUNT(1) FROM scenic_info WHERE (scenic_name LIKE '%北京%' OR address LIKE '%北京%');
+2021-12-15 19:09:49.759 febs [http-nio-9529-exec-3] INFO  p6spy - 2021-12-15 19:09:49 | 耗时 6 ms | SQL 语句：
+SELECT id,area,sold,web_img,address,scenic_name,code,level,link,scenic_price,history,hot,point FROM scenic_info WHERE (scenic_name LIKE '%北京%' OR address LIKE '%北京%') LIMIT 0,20;
+2021-12-15 19:09:56.158 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:09:59.381 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:09:59.381 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:10:02.231 febs [http-nio-9529-exec-8] INFO  p6spy - 2021-12-15 19:10:02 | 耗时 61 ms | SQL 语句：
+SELECT COUNT(1) FROM stay_info;
+2021-12-15 19:10:02.232 febs [http-nio-9529-exec-8] INFO  p6spy - 2021-12-15 19:10:02 | 耗时 0 ms | SQL 语句：
+SELECT id,web_img,code,stay_price,stay_name,stay_address,point FROM stay_info LIMIT 0,4;
+2021-12-15 19:10:03.644 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 19:10:07.076 febs [http-nio-9529-exec-5] INFO  p6spy - 2021-12-15 19:10:07 | 耗时 5 ms | SQL 语句：
+SELECT COUNT(1) FROM stay_order so LEFT JOIN user_info ui ON so.user_code = ui.CODE LEFT JOIN stay_info si ON so.stay_code = si.CODE WHERE so.user_code = '025cdb77-d183-4f16-be88-2be3278d03c7';
+2021-12-15 19:10:07.077 febs [http-nio-9529-exec-5] INFO  p6spy - 2021-12-15 19:10:07 | 耗时 0 ms | SQL 语句：
+SELECT so.id, so.code, so.stay_code AS stayCode, so.stay_num AS stayNum, so.stay_day AS stayDay, so.stay_date AS stayDate, so.stay_status AS stayStatus, so.user_code AS userCode, si.* FROM stay_order so LEFT JOIN user_info ui ON so.user_code = ui.CODE LEFT JOIN stay_info si ON so.stay_code = si.CODE where so.user_code = '025cdb77-d183-4f16-be88-2be3278d03c7' LIMIT 0,100;
+2021-12-15 19:10:08.151 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:10:14.387 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:10:14.387 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:10:20.152 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:10:29.294 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 19:10:29.394 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:10:29.395 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:10:32.153 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:10:44.153 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:10:44.393 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:10:44.394 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:10:56.153 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:10:57.875 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 19:10:59.391 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:10:59.391 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:11:08.153 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:11:14.471 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:11:14.471 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:11:20.153 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_MisfireHandler] INFO  p6spy - 
+2021-12-15 19:11:21.535 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2021-12-15 19:11:29.395 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:11:29.395 febs [QuartzScheduler_MyScheduler-WIN-ETS2DEK9JHC1639564539624_ClusterManager] INFO  p6spy - 
+2021-12-15 19:11:30.999 febs [Thread-24] INFO  org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_WIN-ETS2DEK9JHC1639564539624 paused.
+2021-12-15 19:11:30.999 febs [Thread-24] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2021-12-15 19:11:31.005 febs [Thread-24] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'taskExecutor'
+2021-12-15 19:11:31.007 febs [Thread-24] INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2021-12-15 19:11:31.007 febs [Thread-24] INFO  org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_WIN-ETS2DEK9JHC1639564539624 shutting down.
+2021-12-15 19:11:31.007 febs [Thread-24] INFO  org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_WIN-ETS2DEK9JHC1639564539624 paused.
+2021-12-15 19:11:31.008 febs [Thread-24] INFO  org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_WIN-ETS2DEK9JHC1639564539624 shutdown complete.
+2021-12-15 19:11:31.011 febs [Thread-24] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2021-12-15 19:11:31.011 febs [Thread-24] INFO  com.zaxxer.hikari.HikariDataSource - primary - Shutdown initiated...
+2021-12-15 19:11:31.017 febs [Thread-24] INFO  com.zaxxer.hikari.HikariDataSource - primary - Shutdown completed.
+2021-12-15 19:11:31.017 febs [Thread-24] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource all closed success,bye

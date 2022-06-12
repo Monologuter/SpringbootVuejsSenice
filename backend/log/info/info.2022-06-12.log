@@ -1,0 +1,399 @@
+2022-06-12 15:39:47.530 febs [main] INFO  cc.mrbird.febs.FebsApplication - Starting FebsApplication on chenyadeMacBook-Pro.local with PID 6488 (started by chenya in /Users/chenya/Downloads/景区系统/backend)
+2022-06-12 15:39:47.531 febs [main] INFO  cc.mrbird.febs.FebsApplication - No active profile set, falling back to default profiles: default
+2022-06-12 15:39:48.054 febs [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-12 15:39:48.055 febs [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-06-12 15:39:48.078 febs [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+2022-06-12 15:39:48.248 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'asyncExecutorPoolConfig' of type [cc.mrbird.febs.common.config.AsyncExecutorPoolConfig$$EnhancerBySpringCGLIB$$718ab6db] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:39:48.311 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:39:48.351 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$4bda027f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:39:48.370 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:39:48.379 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:39:48.401 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e24b91ae] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:39:48.426 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfig' of type [cc.mrbird.febs.common.authentication.ShiroConfig$$EnhancerBySpringCGLIB$$4dcb9357] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:39:48.486 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [cc.mrbird.febs.common.config.RedisConfig$$EnhancerBySpringCGLIB$$46904aab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:39:48.530 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisPoolFactory' of type [redis.clients.jedis.JedisPool] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:39:48.532 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisService' of type [cc.mrbird.febs.common.service.impl.RedisServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:39:48.562 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:39:48.567 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatisPlusConfig' of type [cc.mrbird.febs.common.config.MybatisPlusConfig$$EnhancerBySpringCGLIB$$33d2edbd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:39:48.569 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:39:48.575 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$2013fe48] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:39:48.581 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDataSourceCreator' of type [com.baomidou.dynamic.datasource.DynamicDataSourceCreator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:39:48.582 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDataSourceProvider' of type [com.baomidou.dynamic.datasource.provider.YmlDynamicDataSourceProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:39:48.584 febs [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
+2022-06-12 15:39:48.588 febs [main] INFO  com.zaxxer.hikari.HikariDataSource - primary - Starting...
+2022-06-12 15:39:49.760 febs [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-06-12 15:40:00.284 febs [main] INFO  cc.mrbird.febs.FebsApplication - Starting FebsApplication on chenyadeMacBook-Pro.local with PID 6632 (started by chenya in /Users/chenya/Downloads/景区系统/backend)
+2022-06-12 15:40:00.288 febs [main] INFO  cc.mrbird.febs.FebsApplication - No active profile set, falling back to default profiles: default
+2022-06-12 15:40:00.974 febs [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-12 15:40:00.975 febs [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-06-12 15:40:01.005 febs [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23ms. Found 0 repository interfaces.
+2022-06-12 15:40:01.225 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'asyncExecutorPoolConfig' of type [cc.mrbird.febs.common.config.AsyncExecutorPoolConfig$$EnhancerBySpringCGLIB$$6dd81790] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:01.288 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:01.325 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$48276334] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:01.329 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:01.331 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:01.335 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$de98f263] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:01.342 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfig' of type [cc.mrbird.febs.common.authentication.ShiroConfig$$EnhancerBySpringCGLIB$$4a18f40c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:01.417 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [cc.mrbird.febs.common.config.RedisConfig$$EnhancerBySpringCGLIB$$42ddab60] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:01.427 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisPoolFactory' of type [redis.clients.jedis.JedisPool] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:01.429 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisService' of type [cc.mrbird.febs.common.service.impl.RedisServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:01.457 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:01.461 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatisPlusConfig' of type [cc.mrbird.febs.common.config.MybatisPlusConfig$$EnhancerBySpringCGLIB$$30204e72] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:01.463 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:01.469 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$1c615efd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:01.476 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDataSourceCreator' of type [com.baomidou.dynamic.datasource.DynamicDataSourceCreator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:01.476 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDataSourceProvider' of type [com.baomidou.dynamic.datasource.provider.YmlDynamicDataSourceProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:01.478 febs [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
+2022-06-12 15:40:01.480 febs [main] INFO  com.zaxxer.hikari.HikariDataSource - primary - Starting...
+2022-06-12 15:40:01.661 febs [main] INFO  com.zaxxer.hikari.HikariDataSource - primary - Start completed.
+2022-06-12 15:40:01.661 febs [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - load a datasource named [primary] success
+2022-06-12 15:40:01.661 febs [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [primary]
+2022-06-12 15:40:01.661 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.baomidou.dynamic.datasource.DynamicRoutingDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:01.668 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:01.673 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:01.904 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:01.909 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:01.912 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:01.914 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMapper' of type [com.sun.proxy.$Proxy116] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:01.927 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMenuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:01.928 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMenuMapper' of type [com.sun.proxy.$Proxy118] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:01.932 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userRoleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:01.932 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userRoleMapper' of type [com.sun.proxy.$Proxy119] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:01.933 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userRoleService' of type [cc.mrbird.febs.system.service.impl.UserRoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:01.959 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMenuService' of type [cc.mrbird.febs.system.service.impl.RoleMenuServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:01.975 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleService' of type [cc.mrbird.febs.system.service.impl.RoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:01.994 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'menuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:01.995 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'menuMapper' of type [com.sun.proxy.$Proxy123] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:01.997 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'menuService' of type [cc.mrbird.febs.system.service.impl.MenuServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:02.015 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:02.016 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [com.sun.proxy.$Proxy125] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:02.031 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userConfigMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:02.032 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userConfigMapper' of type [com.sun.proxy.$Proxy126] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:02.035 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userConfigService' of type [cc.mrbird.febs.system.service.impl.UserConfigServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:02.051 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userService' of type [cc.mrbird.febs.system.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:02.068 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration$$EnhancerBySpringCGLIB$$3a2c71f4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:02.071 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration$$EnhancerBySpringCGLIB$$ec79340d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:02.072 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$$EnhancerBySpringCGLIB$$a79019fc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:02.076 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:02.078 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:02.080 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration$$EnhancerBySpringCGLIB$$ce5b912a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:02.083 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:02.084 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$$EnhancerBySpringCGLIB$$1c380f83] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:02.091 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:02.092 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration' of type [org.springframework.data.web.config.SpringDataJacksonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:02.094 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jacksonGeoModule' of type [org.springframework.data.geo.GeoModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:02.096 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:02.106 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:02.115 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheService' of type [cc.mrbird.febs.common.service.impl.CacheServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:02.118 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userManager' of type [cc.mrbird.febs.system.manager.UserManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:02.119 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroRealm' of type [cc.mrbird.febs.common.authentication.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:02.125 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:02.136 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-12 15:40:02.320 febs [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9529 (http)
+2022-06-12 15:40:02.328 febs [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9529"]
+2022-06-12 15:40:02.333 febs [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-12 15:40:02.333 febs [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2022-06-12 15:40:02.382 febs [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-12 15:40:02.382 febs [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2048 ms
+2022-06-12 15:40:02.824 febs [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2022-06-12 15:40:02.829 febs [main] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-06-12 15:40:02.830 febs [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.1 created.
+2022-06-12 15:40:02.848 febs [main] INFO  o.s.s.quartz.LocalDataSourceJobStore - Using db table-based data access locking (synchronization).
+2022-06-12 15:40:02.849 febs [main] INFO  o.s.s.quartz.LocalDataSourceJobStore - JobStoreCMT initialized.
+2022-06-12 15:40:02.850 febs [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'MyScheduler' with instanceId 'chenyadeMacBook-Pro.local1655019602824'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2022-06-12 15:40:02.850 febs [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'MyScheduler' initialized from an externally provided properties instance.
+2022-06-12 15:40:02.850 febs [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.1
+2022-06-12 15:40:02.850 febs [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@3ae2702a
+2022-06-12 15:40:02.889 febs [main] INFO  p6spy - 2022-06-12 15:40:02 | 耗时 11 ms | SQL 语句：
+select job_id jobId, bean_name beanName, method_name methodName, params, cron_expression cronExpression, status, remark, create_time createTime from t_job order by job_id;
+2022-06-12 15:40:03.696 febs [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-06-12 15:40:03.778 febs [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'taskExecutor'
+2022-06-12 15:40:03.799 febs [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2022-06-12 15:40:04.087 febs [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2022-06-12 15:40:04.455 febs [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2022-06-12 15:40:04.528 febs [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2022-06-12 15:40:04.538 febs [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-06-12 15:40:04.558 febs [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2022-06-12 15:40:04.621 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_1
+2022-06-12 15:40:04.626 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_2
+2022-06-12 15:40:04.632 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_3
+2022-06-12 15:40:04.635 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_4
+2022-06-12 15:40:04.642 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_5
+2022-06-12 15:40:04.662 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingDELETE_1
+2022-06-12 15:40:04.665 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_1
+2022-06-12 15:40:04.666 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateByIdUsingPUT_1
+2022-06-12 15:40:04.671 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_6
+2022-06-12 15:40:04.674 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingDELETE_2
+2022-06-12 15:40:04.679 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_2
+2022-06-12 15:40:04.679 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateByIdUsingPUT_2
+2022-06-12 15:40:04.680 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingDELETE_3
+2022-06-12 15:40:04.683 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_3
+2022-06-12 15:40:04.684 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateByIdUsingPUT_3
+2022-06-12 15:40:04.685 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingDELETE_4
+2022-06-12 15:40:04.688 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_4
+2022-06-12 15:40:04.689 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateByIdUsingPUT_4
+2022-06-12 15:40:04.690 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_7
+2022-06-12 15:40:04.699 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: exportUsingPOST_8
+2022-06-12 15:40:04.706 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingDELETE_5
+2022-06-12 15:40:04.708 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_5
+2022-06-12 15:40:04.709 febs [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateByIdUsingPUT_5
+2022-06-12 15:40:04.758 febs [main] INFO  o.s.s.quartz.SchedulerFactoryBean - Will start Quartz Scheduler [MyScheduler] in 1 seconds
+2022-06-12 15:40:04.767 febs [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9529"]
+2022-06-12 15:40:04.774 febs [scheduling-1] INFO  cc.mrbird.febs.common.task.CacheTask - delete expired user
+2022-06-12 15:40:04.781 febs [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9529 (http) with context path ''
+2022-06-12 15:40:04.782 febs [main] INFO  cc.mrbird.febs.FebsApplication - Started FebsApplication in 4.7 seconds (JVM running for 4.907)
+2022-06-12 15:40:04.787 febs [main] INFO  c.m.f.common.runner.CacheInitRunner - Redis连接中 ······
+2022-06-12 15:40:04.788 febs [main] INFO  c.m.f.common.runner.CacheInitRunner - 缓存初始化 ······
+2022-06-12 15:40:04.788 febs [main] INFO  c.m.f.common.runner.CacheInitRunner - 缓存用户数据 ······
+2022-06-12 15:40:04.805 febs [main] INFO  p6spy - 2022-06-12 15:40:04 | 耗时 3 ms | SQL 语句：
+SELECT USER_ID,description,password,modify_time,email,ssex,mobile,dept_id,avatar,last_login_time,create_time,status,username FROM t_user;
+2022-06-12 15:40:04.817 febs [main] INFO  p6spy - 2022-06-12 15:40:04 | 耗时 10 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.password, u.email, u.mobile, u. STATUS, u.create_time createTime, u.ssex, d.dept_id deptId, d.dept_name deptName, u.AVATAR, u.DESCRIPTION, u.LAST_LOGIN_TIME lastLoginTime, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'mrbird' group by u.username, u.user_id, u.password, u.email, u.mobile, u.STATUS, u.create_time, u.ssex, d.dept_id, d.dept_name, u.AVATAR, u.DESCRIPTION, u.LAST_LOGIN_TIME;
+2022-06-12 15:40:04.845 febs [main] INFO  p6spy - 2022-06-12 15:40:04 | 耗时 6 ms | SQL 语句：
+select r.* from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'mrbird';
+2022-06-12 15:40:04.859 febs [main] INFO  p6spy - 2022-06-12 15:40:04 | 耗时 5 ms | SQL 语句：
+select distinct m.perms from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) left join t_role_menu rm on (rm.role_id = r.role_id) left join t_menu m on (m.menu_id = rm.menu_id) where u.username = 'mrbird' and m.perms is not null and m.perms <> '';
+2022-06-12 15:40:04.870 febs [main] INFO  p6spy - 2022-06-12 15:40:04 | 耗时 2 ms | SQL 语句：
+SELECT USER_ID,layout,color,multi_page,fix_siderbar,fix_header,theme FROM t_user_config WHERE USER_ID='1' ;
+2022-06-12 15:40:04.876 febs [main] INFO  p6spy - 2022-06-12 15:40:04 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.password, u.email, u.mobile, u. STATUS, u.create_time createTime, u.ssex, d.dept_id deptId, d.dept_name deptName, u.AVATAR, u.DESCRIPTION, u.LAST_LOGIN_TIME lastLoginTime, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'scott' group by u.username, u.user_id, u.password, u.email, u.mobile, u.STATUS, u.create_time, u.ssex, d.dept_id, d.dept_name, u.AVATAR, u.DESCRIPTION, u.LAST_LOGIN_TIME;
+2022-06-12 15:40:04.880 febs [main] INFO  p6spy - 2022-06-12 15:40:04 | 耗时 0 ms | SQL 语句：
+select r.* from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'scott';
+2022-06-12 15:40:04.884 febs [main] INFO  p6spy - 2022-06-12 15:40:04 | 耗时 1 ms | SQL 语句：
+select distinct m.perms from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) left join t_role_menu rm on (rm.role_id = r.role_id) left join t_menu m on (m.menu_id = rm.menu_id) where u.username = 'scott' and m.perms is not null and m.perms <> '';
+2022-06-12 15:40:04.888 febs [main] INFO  p6spy - 2022-06-12 15:40:04 | 耗时 0 ms | SQL 语句：
+SELECT USER_ID,layout,color,multi_page,fix_siderbar,fix_header,theme FROM t_user_config WHERE USER_ID='2' ;
+2022-06-12 15:40:04.892 febs [main] INFO  p6spy - 2022-06-12 15:40:04 | 耗时 0 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.password, u.email, u.mobile, u. STATUS, u.create_time createTime, u.ssex, d.dept_id deptId, d.dept_name deptName, u.AVATAR, u.DESCRIPTION, u.LAST_LOGIN_TIME lastLoginTime, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'jack' group by u.username, u.user_id, u.password, u.email, u.mobile, u.STATUS, u.create_time, u.ssex, d.dept_id, d.dept_name, u.AVATAR, u.DESCRIPTION, u.LAST_LOGIN_TIME;
+2022-06-12 15:40:04.896 febs [main] INFO  p6spy - 2022-06-12 15:40:04 | 耗时 0 ms | SQL 语句：
+select r.* from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'jack';
+2022-06-12 15:40:04.900 febs [main] INFO  p6spy - 2022-06-12 15:40:04 | 耗时 1 ms | SQL 语句：
+select distinct m.perms from t_role r left join t_user_role ur on (r.role_id = ur.role_id) left join t_user u on (u.user_id = ur.user_id) left join t_role_menu rm on (rm.role_id = r.role_id) left join t_menu m on (m.menu_id = rm.menu_id) where u.username = 'jack' and m.perms is not null and m.perms <> '';
+2022-06-12 15:40:04.905 febs [main] INFO  p6spy - 2022-06-12 15:40:04 | 耗时 0 ms | SQL 语句：
+SELECT USER_ID,layout,color,multi_page,fix_siderbar,fix_header,theme FROM t_user_config WHERE USER_ID='12' ;
+2022-06-12 15:40:04.907 febs [main] INFO  c.m.f.common.runner.StartedUpRunner -  __    ___   _      ___   _     ____ _____  ____ 
+2022-06-12 15:40:04.907 febs [main] INFO  c.m.f.common.runner.StartedUpRunner - / /`  / / \ | |\/| | |_) | |   | |_   | |  | |_  
+2022-06-12 15:40:04.907 febs [main] INFO  c.m.f.common.runner.StartedUpRunner - \_\_, \_\_/ |_|  | |_|   |_|__ |_|__  |_|  |_|__ 
+2022-06-12 15:40:04.907 febs [main] INFO  c.m.f.common.runner.StartedUpRunner -                                                       
+2022-06-12 15:40:04.907 febs [main] INFO  c.m.f.common.runner.StartedUpRunner - FEBS 启动完毕，时间：2022-06-12T15:40:04.907
+2022-06-12 15:40:05.075 febs [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-12 15:40:05.075 febs [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-06-12 15:40:05.082 febs [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2022-06-12 15:40:05.082 febs [RMI TCP Connection(4)-127.0.0.1] INFO  p6spy - 2022-06-12 15:40:05 | 耗时 0 ms | SQL 语句：
+select 1;
+2022-06-12 15:40:05.763 febs [Quartz Scheduler [MyScheduler]] INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now, after delay of 1 seconds
+2022-06-12 15:40:05.772 febs [Quartz Scheduler [MyScheduler]] INFO  o.s.s.quartz.LocalDataSourceJobStore - ClusterManager: detected 1 failed or restarted instances.
+2022-06-12 15:40:05.772 febs [Quartz Scheduler [MyScheduler]] INFO  o.s.s.quartz.LocalDataSourceJobStore - ClusterManager: Scanning for instance "192.168.0.1001651236948625"'s failed in-progress jobs.
+2022-06-12 15:40:05.774 febs [Quartz Scheduler [MyScheduler]] INFO  p6spy - 
+2022-06-12 15:40:05.775 febs [Quartz Scheduler [MyScheduler]] INFO  org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_chenyadeMacBook-Pro.local1655019602824 started.
+2022-06-12 15:40:05.788 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_MisfireHandler] INFO  p6spy - 
+2022-06-12 15:40:05.791 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2022-06-12 15:40:17.785 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_MisfireHandler] INFO  p6spy - 
+2022-06-12 15:40:20.779 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:40:20.780 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:40:29.787 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_MisfireHandler] INFO  p6spy - 
+2022-06-12 15:40:33.731 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2022-06-12 15:40:35.789 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:40:35.790 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:40:41.793 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_MisfireHandler] INFO  p6spy - 
+2022-06-12 15:40:50.804 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:40:50.804 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:40:53.791 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_MisfireHandler] INFO  p6spy - 
+2022-06-12 15:40:59.308 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2022-06-12 15:41:05.797 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_MisfireHandler] INFO  p6spy - 
+2022-06-12 15:41:05.803 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:41:05.804 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:41:17.799 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_MisfireHandler] INFO  p6spy - 
+2022-06-12 15:41:20.818 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:41:20.819 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:41:26.944 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2022-06-12 15:41:29.805 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_MisfireHandler] INFO  p6spy - 
+2022-06-12 15:41:35.820 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:41:35.821 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:41:41.808 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_MisfireHandler] INFO  p6spy - 
+2022-06-12 15:41:50.828 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:41:50.829 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:41:51.546 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2022-06-12 15:41:53.808 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_MisfireHandler] INFO  p6spy - 
+2022-06-12 15:42:05.815 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_MisfireHandler] INFO  p6spy - 
+2022-06-12 15:42:05.831 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:42:05.832 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:42:17.819 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_MisfireHandler] INFO  p6spy - 
+2022-06-12 15:42:20.105 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2022-06-12 15:42:20.840 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:42:20.840 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:42:29.825 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_MisfireHandler] INFO  p6spy - 
+2022-06-12 15:42:35.846 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:42:35.846 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:42:41.842 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_MisfireHandler] INFO  p6spy - 
+2022-06-12 15:42:45.300 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2022-06-12 15:42:50.851 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:42:50.852 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:42:53.839 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_MisfireHandler] INFO  p6spy - 
+2022-06-12 15:43:05.840 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_MisfireHandler] INFO  p6spy - 
+2022-06-12 15:43:05.854 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:43:05.854 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:43:13.874 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2022-06-12 15:43:17.841 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_MisfireHandler] INFO  p6spy - 
+2022-06-12 15:43:20.864 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:43:20.865 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:43:29.844 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_MisfireHandler] INFO  p6spy - 
+2022-06-12 15:43:35.177 febs [http-nio-9529-exec-4] INFO  c.m.febs.common.aspect.LimitAspect - IP:127.0.0.1 第 1 次访问key为 [limit_login127.0.0.1]，描述为 [登录接口] 的接口
+2022-06-12 15:43:35.216 febs [http-nio-9529-exec-4] INFO  p6spy - 2022-06-12 15:43:35 | 耗时 0 ms | SQL 语句：
+SELECT USER_ID,description,password,modify_time,email,ssex,mobile,dept_id,avatar,last_login_time,create_time,status,username FROM t_user WHERE (username = '17805052221');
+2022-06-12 15:43:35.869 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:43:35.869 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:43:40.471 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2022-06-12 15:43:41.848 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_MisfireHandler] INFO  p6spy - 
+2022-06-12 15:43:42.577 febs [http-nio-9529-exec-6] INFO  c.m.febs.common.aspect.LimitAspect - IP:127.0.0.1 第 2 次访问key为 [limit_login127.0.0.1]，描述为 [登录接口] 的接口
+2022-06-12 15:43:42.615 febs [http-nio-9529-exec-6] INFO  p6spy - 2022-06-12 15:43:42 | 耗时 1 ms | SQL 语句：
+UPDATE t_user SET last_login_time='2022-06-12T15:43:42.608+0800' WHERE (username = 'mrbird');
+2022-06-12 15:43:42.617 febs [http-nio-9529-exec-6] INFO  p6spy - 2022-06-12 15:43:42 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.password, u.email, u.mobile, u. STATUS, u.create_time createTime, u.ssex, d.dept_id deptId, d.dept_name deptName, u.AVATAR, u.DESCRIPTION, u.LAST_LOGIN_TIME lastLoginTime, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'mrbird' group by u.username, u.user_id, u.password, u.email, u.mobile, u.STATUS, u.create_time, u.ssex, d.dept_id, d.dept_name, u.AVATAR, u.DESCRIPTION, u.LAST_LOGIN_TIME;
+2022-06-12 15:43:42.620 febs [http-nio-9529-exec-6] INFO  p6spy - 
+2022-06-12 15:43:42.631 febs [http-nio-9529-exec-6] INFO  p6spy - 2022-06-12 15:43:42 | 耗时 3 ms | SQL 语句：
+INSERT INTO t_login_log ( login_time, ip, location, username ) VALUES ( '2022-06-12T15:43:42.624+0800', '127.0.0.1', '', 'mrbird' );
+2022-06-12 15:43:42.632 febs [http-nio-9529-exec-6] INFO  p6spy - 
+2022-06-12 15:43:42.678 febs [http-nio-9529-exec-8] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2022-06-12 15:43:42.695 febs [http-nio-9529-exec-8] INFO  p6spy - 2022-06-12 15:43:42 | 耗时 2 ms | SQL 语句：
+select m.* from t_menu m where m.type <> 1 and m.MENU_ID in (select distinct rm.menu_id from t_role_menu rm left join t_role r on (rm.role_id = r.role_id) left join t_user_role ur on (ur.role_id = r.role_id) left join t_user u on (u.user_id = ur.user_id) where u.username = 'mrbird') order by m.order_num;
+2022-06-12 15:43:45.114 febs [http-nio-9529-exec-10] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2022-06-12 15:43:45.159 febs [http-nio-9529-exec-10] INFO  p6spy - 2022-06-12 15:43:45 | 耗时 8 ms | SQL 语句：
+SELECT COUNT(1) FROM user_info;
+2022-06-12 15:43:45.162 febs [http-nio-9529-exec-10] INFO  p6spy - 2022-06-12 15:43:45 | 耗时 0 ms | SQL 语句：
+SELECT id,address,code,born,sex,ip_address,uppwer,windows,phone,idcard,name,pwd,age,email FROM user_info LIMIT 0,10;
+2022-06-12 15:43:47.531 febs [http-nio-9529-exec-2] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2022-06-12 15:43:48.864 febs [http-nio-9529-exec-4] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2022-06-12 15:43:48.895 febs [http-nio-9529-exec-4] INFO  p6spy - 2022-06-12 15:43:48 | 耗时 3 ms | SQL 语句：
+SELECT COUNT(1) FROM t_log;
+2022-06-12 15:43:48.897 febs [http-nio-9529-exec-4] INFO  p6spy - 2022-06-12 15:43:48 | 耗时 1 ms | SQL 语句：
+SELECT ID, method, create_time, ip, location, time, params, operation, username FROM t_log ORDER BY create_time DESC LIMIT 0,10;
+2022-06-12 15:43:50.878 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:43:50.879 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:43:53.852 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_MisfireHandler] INFO  p6spy - 
+2022-06-12 15:43:57.468 febs [http-nio-9529-exec-6] INFO  c.m.f.common.authentication.JWTUtil - token is valid
+2022-06-12 15:44:03.751 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2022-06-12 15:44:05.856 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_MisfireHandler] INFO  p6spy - 
+2022-06-12 15:44:05.881 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:44:05.881 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:44:16.586 febs [http-nio-9529-exec-9] INFO  p6spy - 2022-06-12 15:44:16 | 耗时 94 ms | SQL 语句：
+SELECT COUNT(1) FROM scenic_info;
+2022-06-12 15:44:16.589 febs [http-nio-9529-exec-9] INFO  p6spy - 2022-06-12 15:44:16 | 耗时 1 ms | SQL 语句：
+SELECT id,area,sold,web_img,address,scenic_name,code,level,link,scenic_price,history,hot,point FROM scenic_info LIMIT 0,15;
+2022-06-12 15:44:16.600 febs [http-nio-9529-exec-9] INFO  p6spy - 2022-06-12 15:44:16 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM question_info;
+2022-06-12 15:44:16.601 febs [http-nio-9529-exec-9] INFO  p6spy - 2022-06-12 15:44:16 | 耗时 0 ms | SQL 语句：
+SELECT id,quest_user,code,quest_date,quest_title FROM question_info LIMIT 0,5;
+2022-06-12 15:44:17.862 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_MisfireHandler] INFO  p6spy - 
+2022-06-12 15:44:20.092 febs [http-nio-9529-exec-7] INFO  p6spy - 2022-06-12 15:44:20 | 耗时 11 ms | SQL 语句：
+SELECT COUNT(1) FROM question_info;
+2022-06-12 15:44:20.093 febs [http-nio-9529-exec-7] INFO  p6spy - 2022-06-12 15:44:20 | 耗时 0 ms | SQL 语句：
+SELECT id,quest_user,code,quest_date,quest_title FROM question_info LIMIT 0,5;
+2022-06-12 15:44:20.823 febs [http-nio-9529-exec-9] INFO  p6spy - 2022-06-12 15:44:20 | 耗时 11 ms | SQL 语句：
+SELECT COUNT(1) FROM scenic_info;
+2022-06-12 15:44:20.824 febs [http-nio-9529-exec-9] INFO  p6spy - 2022-06-12 15:44:20 | 耗时 0 ms | SQL 语句：
+SELECT id,area,sold,web_img,address,scenic_name,code,level,link,scenic_price,history,hot,point FROM scenic_info LIMIT 25,5;
+2022-06-12 15:44:20.867 febs [http-nio-9529-exec-9] INFO  p6spy - 2022-06-12 15:44:20 | 耗时 30 ms | SQL 语句：
+SELECT COUNT(1) FROM scenic_info WHERE (scenic_name LIKE '%北京%' OR address LIKE '%北京%');
+2022-06-12 15:44:20.869 febs [http-nio-9529-exec-9] INFO  p6spy - 2022-06-12 15:44:20 | 耗时 1 ms | SQL 语句：
+SELECT id,area,sold,web_img,address,scenic_name,code,level,link,scenic_price,history,hot,point FROM scenic_info WHERE (scenic_name LIKE '%北京%' OR address LIKE '%北京%') LIMIT 0,20;
+2022-06-12 15:44:20.887 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:44:20.887 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:44:20.961 febs [http-nio-9529-exec-9] INFO  p6spy - 2022-06-12 15:44:20 | 耗时 29 ms | SQL 语句：
+SELECT COUNT(1) FROM scenic_info WHERE (scenic_name LIKE '%北京%' OR address LIKE '%北京%');
+2022-06-12 15:44:20.962 febs [http-nio-9529-exec-9] INFO  p6spy - 2022-06-12 15:44:20 | 耗时 0 ms | SQL 语句：
+SELECT id,area,sold,web_img,address,scenic_name,code,level,link,scenic_price,history,hot,point FROM scenic_info WHERE (scenic_name LIKE '%北京%' OR address LIKE '%北京%') LIMIT 0,20;
+2022-06-12 15:44:21.616 febs [http-nio-9529-exec-9] INFO  p6spy - 2022-06-12 15:44:21 | 耗时 4 ms | SQL 语句：
+SELECT COUNT(1) FROM stay_info;
+2022-06-12 15:44:21.618 febs [http-nio-9529-exec-9] INFO  p6spy - 2022-06-12 15:44:21 | 耗时 0 ms | SQL 语句：
+SELECT id,web_img,code,stay_price,stay_name,stay_address,point FROM stay_info LIMIT 0,4;
+2022-06-12 15:44:23.026 febs [http-nio-9529-exec-5] INFO  p6spy - 2022-06-12 15:44:23 | 耗时 7 ms | SQL 语句：
+SELECT COUNT(1) FROM stay_info;
+2022-06-12 15:44:23.028 febs [http-nio-9529-exec-5] INFO  p6spy - 2022-06-12 15:44:23 | 耗时 0 ms | SQL 语句：
+SELECT id,web_img,code,stay_price,stay_name,stay_address,point FROM stay_info LIMIT 0,4;
+2022-06-12 15:44:26.747 febs [http-nio-9529-exec-7] INFO  p6spy - 2022-06-12 15:44:26 | 耗时 0 ms | SQL 语句：
+SELECT id,web_img,code,stay_price,stay_name,stay_address,point FROM stay_info WHERE id=2 ;
+2022-06-12 15:44:29.868 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_MisfireHandler] INFO  p6spy - 
+2022-06-12 15:44:32.391 febs [http-nio-9529-exec-1] INFO  p6spy - 2022-06-12 15:44:32 | 耗时 8 ms | SQL 语句：
+SELECT COUNT(1) FROM scenic_info;
+2022-06-12 15:44:32.393 febs [http-nio-9529-exec-1] INFO  p6spy - 2022-06-12 15:44:32 | 耗时 1 ms | SQL 语句：
+SELECT id,area,sold,web_img,address,scenic_name,code,level,link,scenic_price,history,hot,point FROM scenic_info LIMIT 0,15;
+2022-06-12 15:44:32.398 febs [http-nio-9529-exec-1] INFO  p6spy - 2022-06-12 15:44:32 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM question_info;
+2022-06-12 15:44:32.399 febs [http-nio-9529-exec-1] INFO  p6spy - 2022-06-12 15:44:32 | 耗时 0 ms | SQL 语句：
+SELECT id,quest_user,code,quest_date,quest_title FROM question_info LIMIT 0,5;
+2022-06-12 15:44:33.501 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2022-06-12 15:44:34.099 febs [http-nio-9529-exec-9] INFO  p6spy - 2022-06-12 15:44:34 | 耗时 3 ms | SQL 语句：
+SELECT COUNT(1) FROM question_info;
+2022-06-12 15:44:34.101 febs [http-nio-9529-exec-9] INFO  p6spy - 2022-06-12 15:44:34 | 耗时 0 ms | SQL 语句：
+SELECT id,quest_user,code,quest_date,quest_title FROM question_info LIMIT 0,5;
+2022-06-12 15:44:34.708 febs [http-nio-9529-exec-6] INFO  p6spy - 2022-06-12 15:44:34 | 耗时 9 ms | SQL 语句：
+SELECT COUNT(1) FROM scenic_info;
+2022-06-12 15:44:34.710 febs [http-nio-9529-exec-6] INFO  p6spy - 2022-06-12 15:44:34 | 耗时 0 ms | SQL 语句：
+SELECT id,area,sold,web_img,address,scenic_name,code,level,link,scenic_price,history,hot,point FROM scenic_info LIMIT 25,5;
+2022-06-12 15:44:34.742 febs [http-nio-9529-exec-6] INFO  p6spy - 2022-06-12 15:44:34 | 耗时 27 ms | SQL 语句：
+SELECT COUNT(1) FROM scenic_info WHERE (scenic_name LIKE '%北京%' OR address LIKE '%北京%');
+2022-06-12 15:44:34.746 febs [http-nio-9529-exec-6] INFO  p6spy - 2022-06-12 15:44:34 | 耗时 2 ms | SQL 语句：
+SELECT id,area,sold,web_img,address,scenic_name,code,level,link,scenic_price,history,hot,point FROM scenic_info WHERE (scenic_name LIKE '%北京%' OR address LIKE '%北京%') LIMIT 0,20;
+2022-06-12 15:44:34.772 febs [http-nio-9529-exec-6] INFO  p6spy - 2022-06-12 15:44:34 | 耗时 16 ms | SQL 语句：
+SELECT COUNT(1) FROM scenic_info WHERE (scenic_name LIKE '%北京%' OR address LIKE '%北京%');
+2022-06-12 15:44:34.776 febs [http-nio-9529-exec-6] INFO  p6spy - 2022-06-12 15:44:34 | 耗时 1 ms | SQL 语句：
+SELECT id,area,sold,web_img,address,scenic_name,code,level,link,scenic_price,history,hot,point FROM scenic_info WHERE (scenic_name LIKE '%北京%' OR address LIKE '%北京%') LIMIT 0,20;
+2022-06-12 15:44:35.286 febs [http-nio-9529-exec-4] INFO  p6spy - 2022-06-12 15:44:35 | 耗时 7 ms | SQL 语句：
+SELECT COUNT(1) FROM stay_info;
+2022-06-12 15:44:35.287 febs [http-nio-9529-exec-4] INFO  p6spy - 2022-06-12 15:44:35 | 耗时 0 ms | SQL 语句：
+SELECT id,web_img,code,stay_price,stay_name,stay_address,point FROM stay_info LIMIT 0,4;
+2022-06-12 15:44:35.891 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:44:35.891 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:44:38.046 febs [http-nio-9529-exec-2] INFO  p6spy - 2022-06-12 15:44:38 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM question_info;
+2022-06-12 15:44:38.048 febs [http-nio-9529-exec-2] INFO  p6spy - 2022-06-12 15:44:38 | 耗时 0 ms | SQL 语句：
+SELECT id,quest_user,code,quest_date,quest_title FROM question_info LIMIT 0,5;
+2022-06-12 15:44:38.480 febs [http-nio-9529-exec-9] INFO  p6spy - 2022-06-12 15:44:38 | 耗时 11 ms | SQL 语句：
+SELECT COUNT(1) FROM scenic_info;
+2022-06-12 15:44:38.482 febs [http-nio-9529-exec-9] INFO  p6spy - 2022-06-12 15:44:38 | 耗时 1 ms | SQL 语句：
+SELECT id,area,sold,web_img,address,scenic_name,code,level,link,scenic_price,history,hot,point FROM scenic_info LIMIT 0,15;
+2022-06-12 15:44:38.490 febs [http-nio-9529-exec-9] INFO  p6spy - 2022-06-12 15:44:38 | 耗时 4 ms | SQL 语句：
+SELECT COUNT(1) FROM question_info;
+2022-06-12 15:44:38.491 febs [http-nio-9529-exec-9] INFO  p6spy - 2022-06-12 15:44:38 | 耗时 0 ms | SQL 语句：
+SELECT id,quest_user,code,quest_date,quest_title FROM question_info LIMIT 0,5;
+2022-06-12 15:44:41.867 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_MisfireHandler] INFO  p6spy - 
+2022-06-12 15:44:50.896 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:44:50.897 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:44:53.871 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_MisfireHandler] INFO  p6spy - 
+2022-06-12 15:44:58.694 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2022-06-12 15:45:05.871 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_MisfireHandler] INFO  p6spy - 
+2022-06-12 15:45:05.901 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:45:05.901 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:45:17.876 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_MisfireHandler] INFO  p6spy - 
+2022-06-12 15:45:20.906 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:45:20.907 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:45:27.324 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2022-06-12 15:45:29.880 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_MisfireHandler] INFO  p6spy - 
+2022-06-12 15:45:35.912 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:45:35.912 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:45:41.885 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_MisfireHandler] INFO  p6spy - 
+2022-06-12 15:45:50.920 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:45:50.920 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_ClusterManager] INFO  p6spy - 
+2022-06-12 15:45:52.405 febs [MyScheduler_QuartzSchedulerThread] INFO  p6spy - 
+2022-06-12 15:45:53.887 febs [QuartzScheduler_MyScheduler-chenyadeMacBook-Pro.local1655019602824_MisfireHandler] INFO  p6spy - 
+2022-06-12 15:46:04.496 febs [Thread-12] INFO  org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_chenyadeMacBook-Pro.local1655019602824 paused.
+2022-06-12 15:46:04.497 febs [Thread-12] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2022-06-12 15:46:04.502 febs [Thread-12] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'taskExecutor'
+2022-06-12 15:46:04.503 febs [Thread-12] INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2022-06-12 15:46:04.503 febs [Thread-12] INFO  org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_chenyadeMacBook-Pro.local1655019602824 shutting down.
+2022-06-12 15:46:04.503 febs [Thread-12] INFO  org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_chenyadeMacBook-Pro.local1655019602824 paused.
+2022-06-12 15:46:04.503 febs [Thread-12] INFO  org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_chenyadeMacBook-Pro.local1655019602824 shutdown complete.
+2022-06-12 15:46:04.506 febs [Thread-12] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2022-06-12 15:46:04.506 febs [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - primary - Shutdown initiated...
+2022-06-12 15:46:04.508 febs [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - primary - Shutdown completed.
+2022-06-12 15:46:04.508 febs [Thread-12] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
